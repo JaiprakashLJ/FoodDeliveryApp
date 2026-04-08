@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Delivery</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#ff5200;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px;
+}
+
+.card p{
+margin:5px 10px;
+color:#555;
+}
+
+.rating{
+color:green;
+font-weight:bold;
+}
+
+.time{
+font-size:14px;
+color:#777;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Food Delivery</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?pizza">
+<h3>Pizza Palace</h3>
+<p class="rating">⭐ 4.3</p>
+<p>Italian, Pizza</p>
+<p class="time">30 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?burger">
+<h3>Burger King</h3>
+<p class="rating">⭐ 4.1</p>
+<p>Burgers, Fast Food</p>
+<p class="time">25 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?biryani">
+<h3>Biryani House</h3>
+<p class="rating">⭐ 4.5</p>
+<p>Biryani, Indian</p>
+<p class="time">35 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?noodles">
+<h3>Chinese Wok</h3>
+<p class="rating">⭐ 4.2</p>
+<p>Chinese</p>
+<p class="time">28 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?dosa">
+<h3>South Spice</h3>
+<p class="rating">⭐ 4.4</p>
+<p>South Indian</p>
+<p class="time">20 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?sandwich">
+<h3>Sandwich Hub</h3>
+<p class="rating">⭐ 4.0</p>
+<p>Snacks</p>
+<p class="time">18 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?shawarma">
+<h3>Arabian Grill</h3>
+<p class="rating">⭐ 4.3</p>
+<p>Shawarma, Grill</p>
+<p class="time">30 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?fried-chicken">
+<h3>Chicken Spot</h3>
+<p class="rating">⭐ 4.2</p>
+<p>Fried Chicken</p>
+<p class="time">27 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?pasta">
+<h3>Pasta Corner</h3>
+<p class="rating">⭐ 4.1</p>
+<p>Italian</p>
+<p class="time">26 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?cake">
+<h3>Cake World</h3>
+<p class="rating">⭐ 4.6</p>
+<p>Desserts</p>
+<p class="time">22 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?coffee">
+<h3>Coffee Cafe</h3>
+<p class="rating">⭐ 4.3</p>
+<p>Coffee, Snacks</p>
+<p class="time">15 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?rolls">
+<h3>Rolls Mania</h3>
+<p class="rating">⭐ 4.2</p>
+<p>Rolls</p>
+<p class="time">24 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?icecream">
+<h3>Ice Cream Hub</h3>
+<p class="rating">⭐ 4.5</p>
+<p>Desserts</p>
+<p class="time">20 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?tacos">
+<h3>Taco Town</h3>
+<p class="rating">⭐ 4.1</p>
+<p>Mexican</p>
+<p class="time">30 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?salad">
+<h3>Healthy Bowl</h3>
+<p class="rating">⭐ 4.4</p>
+<p>Salads</p>
+<p class="time">18 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?paneer">
+<h3>Paneer Treat</h3>
+<p class="rating">⭐ 4.3</p>
+<p>North Indian</p>
+<p class="time">32 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?kebab">
+<h3>Kebab Grill</h3>
+<p class="rating">⭐ 4.4</p>
+<p>Kebabs</p>
+<p class="time">29 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?thali">
+<h3>Indian Thali</h3>
+<p class="rating">⭐ 4.2</p>
+<p>Meals</p>
+<p class="time">34 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?juice">
+<h3>Juice Junction</h3>
+<p class="rating">⭐ 4.3</p>
+<p>Juices</p>
+<p class="time">12 mins</p>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?wrap">
+<h3>Wrap World</h3>
+<p class="rating">⭐ 4.1</p>
+<p>Wraps</p>
+<p class="time">23 mins</p>
+</div>
+
+</div>
+
+</body>
+</html>

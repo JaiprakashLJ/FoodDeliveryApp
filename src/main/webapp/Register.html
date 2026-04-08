@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: #ff5200;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    padding-top: 40px;        
+    min-height: 100vh;         
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+    display: flex;            
+    flex-direction: column;    
+}
+
+/* Title */
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+form {
+    display: flex;             
+    flex-direction: column;    
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Label */
+.input-group label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #888;
+    font-size: 14px;
+    transition: 0.3s;
+    background: white;
+    padding: 0 5px;
+}
+
+/* Floating Effect */
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #ff5200;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff5200;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e64a00;
+}
+
+/* Responsive */
+@media(max-width: 500px) {
+    .card {
+        width: 90%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+   User Registration Form
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Create Account</h2>
+
+        <form action="registerServlet" method="post">
+
+            <div class="input-group">
+                <input type="text" name="name" required>
+                <label>Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="phoneNumber" required>
+                <label>Phone Number</label>
+            </div>
+
+            <div class="input-group">
+                <textarea name="address" rows="3" required></textarea>
+                <label>Address</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="role" required>
+                <label>Role</label>
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
